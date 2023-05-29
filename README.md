@@ -1,8 +1,18 @@
-# Template Repo for ML Project
+# Machine Learning Project on Fraud Detection 
 
-This template repo will give you a good starting point for your second project. Besides the files used for creating a virtual environment, you will find a simple example of how to build a simple model in a python script. This is maybe the simplest way to do it. We train a simple model in the jupyter notebook, where we select only some features and do minimal cleaning. The output is then stored in simple python scripts.
+This is a machine learning project based on the Zindi challenge [here](https://zindi.africa/learn/fraud-detection-in-electricity-and-gas-consumption-challenge-tutorial).
+In this first machine learning project we are starting to explore the dataset using exploratory data analysis and visualisation tools in python. We are testing different algorithms to detect electricity fraud. By running hyperparameter tuning we are optimizing the best models to improve our metric (f1 score).
 
-The data used for this is: [coffee quality dataset](https://github.com/jldbc/coffee-quality-database).
+## Notebooks overview
+* Notebook 01: Data Preparation
+
+    * This notebook takes in the raw data of the Zindi challenge and runs the initial EDA and cleaning of the dataset. In the end the final dataset used for further training of the model is generated and saved as csv file.
+* Notebook 02: Baseline Model
+
+    * This notebook creates an initial baseline model using the Dummy Classifier. This result will be taken as a benchmark to compare the performance of our final models to.
+* Notebook 03: Model
+
+    * In this notebook the final dataset is being used to test different algorithms and detect which model works the best for our dataset. In the end hyperparemeter tuning will be performed to improve the performance of the model.
 
 ---
 ## Requirements and Environment
@@ -21,24 +31,3 @@ source .venv/bin/activate
 pip install --upgrade pip
 pip install -r requirements.txt
 ```
-
-## Usage
-
-In order to train the model and store test data in the data folder and the model in models run:
-
-```bash
-#activate env
-source .venv/bin/activate
-
-python example_files/train.py  
-```
-
-In order to test that predict works on a test set you created run:
-
-```bash
-python example_files/predict.py models/linear_regression_model.sav data/X_test.csv data/y_test.csv
-```
-
-## Limitations
-
-Development libraries are part of the production environment, normally these would be separate as the production code should be as slim as possible.
