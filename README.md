@@ -13,7 +13,8 @@ In this first machine learning project we are starting to explore the dataset us
 * Notebook 03: Model
 
     * In this notebook the final dataset is being used to test different algorithms and detect which model works the best for our dataset. In the end hyperparemeter tuning will be performed to improve the performance of the model.
-
+* Final Presentation:
+    * Presentation file after finishing this machine learning project. The presentation is summarizing the key findings and messages of this project and the main results of testing different algorithms in predicting fraud.
 ---
 ## Requirements and Environment
 
